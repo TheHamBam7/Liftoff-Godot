@@ -335,3 +335,11 @@ frame_progress = 0.5456621
 script = ExtResource("79_wm5dt")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=649149247]
+
+[node name="Label" type="Label" parent="." unique_id=86478079]
+offset_left = -26.0
+offset_top = -297.0
+offset_right = 14.0
+offset_bottom = -274.0
+theme_override_font_sizes/font_size = 90
+text = "0"
