@@ -37,5 +37,11 @@ func _process(_delta: float) -> void:
 		time_started = false
 		$HoldSlidersThere.visible = false
 
+	if Global.TM == 0:
+		get_tree().change_scene_to_file("res://Global/main_scene.tscn")
+
+
 func _on_timer_timeout() -> void:
+	Global.P += 1
+	Global.slider = 1
 	get_tree().change_scene_to_file("res://Global/main_scene.tscn")

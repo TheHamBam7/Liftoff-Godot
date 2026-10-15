@@ -10,7 +10,6 @@ func _ready() -> void:
 	$Failure.visible = false
 	$Failure/Failure.visible = false
 	$CanvasModulate.visible = false
-
 func _process(_delta: float) -> void:
 	if Global.slider == 1:
 		$SlidersDone.visible = true
@@ -28,6 +27,9 @@ func _process(_delta: float) -> void:
 		pass
 	
 	if Global.TM == 0 and exploded == false:
+		$Hatch.visible = false
+		$Slider.visible = false
+		$Speed.visible = false
 		exploded = true
 		await get_tree().create_timer(3).timeout
 		timeout = true
@@ -64,3 +66,7 @@ func _process(_delta: float) -> void:
 		pass
 	
 	
+
+
+func _on_fuel_pressed() -> void:
+	pass # Replace with function body.
