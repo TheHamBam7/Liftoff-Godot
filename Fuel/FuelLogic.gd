@@ -1,11 +1,14 @@
 extends Node2D
 
 
-# Called when the node enters the scene tree for the first time.
+# how this is going to work is animation of pouring idk abt liquid but its just pouring adds 1s to the total
+# if you are close to the total when you stop it will say perfect and go to menu, if not it will restart
+# it wont stop at full it will let you stop. Its hold and stop not hold stop hold stop.
+
+
 func _ready() -> void:
-	pass # Replace with function body.
+	pass
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass

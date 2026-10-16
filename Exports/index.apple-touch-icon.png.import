@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3mgguh8br2wy"
-path="res://.godot/imported/GMTK (Countdown).apple-touch-icon.png-81ef101fd6e886bc3acc8089527dc5bd.ctex"
+uid="uid://leb1d6h84lq2"
+path="res://.godot/imported/index.apple-touch-icon.png-b75bd496fc4854b250deb61468b63048.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Exports/GMTK (Countdown).apple-touch-icon.png"
-dest_files=["res://.godot/imported/GMTK (Countdown).apple-touch-icon.png-81ef101fd6e886bc3acc8089527dc5bd.ctex"]
+source_file="res://Exports/index.apple-touch-icon.png"
+dest_files=["res://.godot/imported/index.apple-touch-icon.png-b75bd496fc4854b250deb61468b63048.ctex"]
 
 [params]
 

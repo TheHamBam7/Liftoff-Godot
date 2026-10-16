@@ -1,7 +1,7 @@
 extends Button
 
-
-
-
 func _on_pressed() -> void:
-	pass # Replace with function body.
+	if Global.fuel == 0:
+		get_tree().change_scene_to_file("res://Fuel/fuel.tscn")
+	else:
+		pass

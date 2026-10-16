@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwsuw5xvvf7pu"
-path="res://.godot/imported/GMTK (Countdown).png-5803ee605f35d2ffdd699650702db9ed.ctex"
+uid="uid://c7s8ghgxmlwsl"
+path="res://.godot/imported/index.png-e90f5f160aab97165313f303aac8e9e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Exports/GMTK (Countdown).png"
-dest_files=["res://.godot/imported/GMTK (Countdown).png-5803ee605f35d2ffdd699650702db9ed.ctex"]
+source_file="res://Exports/index.png"
+dest_files=["res://.godot/imported/index.png-e90f5f160aab97165313f303aac8e9e1.ctex"]
 
 [params]
 

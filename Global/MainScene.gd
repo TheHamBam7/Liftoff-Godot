@@ -30,6 +30,7 @@ func _process(_delta: float) -> void:
 		$Hatch.visible = false
 		$Slider.visible = false
 		$Speed.visible = false
+		$Fuel.visible = false
 		exploded = true
 		await get_tree().create_timer(3).timeout
 		timeout = true

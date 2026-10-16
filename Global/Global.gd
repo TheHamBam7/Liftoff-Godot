@@ -6,9 +6,11 @@ var slider = 0
 
 var speed = 0
 
+var fuel = 0
+
 var P = 0
 
-var TM = 5
+var TM = 60
 
 func _on_timer_timeout() -> void:
 	TM -= 1

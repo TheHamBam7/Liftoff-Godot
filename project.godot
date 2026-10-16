@@ -24,7 +24,6 @@ TimerGlobal="*uid://caxyhd4orfp5p"
 
 window/size/mode=3
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 
 [editor_plugins]
 
