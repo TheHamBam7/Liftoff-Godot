@@ -2,6 +2,47 @@
 
 [ext_resource type="Script" uid="uid://cgcrudg6xih4q" path="res://Fuel/FuelLogic.gd" id="1_x704q"]
 [ext_resource type="Texture2D" uid="uid://b5rbsxr1tfai5" path="res://icon.svg" id="2_tmp4b"]
+[ext_resource type="Texture2D" uid="uid://dvf3l143aat14" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame1.png" id="3_4y4a0"]
+[ext_resource type="Texture2D" uid="uid://wkwvvvi8wf68" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame2.png" id="4_com3t"]
+[ext_resource type="Texture2D" uid="uid://copw0v7wr0b8y" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame3.png" id="5_2bacy"]
+[ext_resource type="Texture2D" uid="uid://b80icmoq2j5e" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame4.png" id="6_2ytwl"]
+[ext_resource type="Texture2D" uid="uid://rhvihyd1a42d" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame5.png" id="7_x5fo0"]
+[ext_resource type="Texture2D" uid="uid://d4marwdxas0vy" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame6.png" id="8_jhtmk"]
+[ext_resource type="Texture2D" uid="uid://buyu31pyku1fb" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame7.png" id="9_vr2h8"]
+[ext_resource type="Texture2D" uid="uid://bvdt34u76qaxd" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame8.png" id="10_6ilfd"]
+[ext_resource type="Texture2D" uid="uid://ccdxn672mvl80" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame9.png" id="11_qi4v0"]
+[ext_resource type="Texture2D" uid="uid://dcdwl01b1aq4r" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame10.png" id="12_4eerf"]
+[ext_resource type="Texture2D" uid="uid://dj2nvmjmcy334" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame11.png" id="13_y0tw0"]
+[ext_resource type="Texture2D" uid="uid://dq27rlyw5dxtd" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame12.png" id="14_0qhb8"]
+[ext_resource type="Texture2D" uid="uid://c2tcoox7wrxn6" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame13.png" id="15_47rec"]
+[ext_resource type="Texture2D" uid="uid://dly5cew134wl5" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame14.png" id="16_l00ns"]
+[ext_resource type="Texture2D" uid="uid://cpqbrfgumgtg5" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame15.png" id="17_4fk6f"]
+[ext_resource type="Texture2D" uid="uid://cgwooo5cwogdw" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame16.png" id="18_cwady"]
+[ext_resource type="Texture2D" uid="uid://6uuvjwd43jhd" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame17.png" id="19_rora7"]
+[ext_resource type="Texture2D" uid="uid://c3ei3c8orifrq" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame18.png" id="20_77q8q"]
+[ext_resource type="Texture2D" uid="uid://bj6fsmtkumuw3" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame19.png" id="21_i2bum"]
+[ext_resource type="Texture2D" uid="uid://bcvu5t0pvsu5s" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame20.png" id="22_6a1f6"]
+[ext_resource type="Texture2D" uid="uid://drbkdh737ihpp" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame21.png" id="23_6qy2s"]
+[ext_resource type="Texture2D" uid="uid://hu1uv23dumh" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame22.png" id="24_7brb7"]
+[ext_resource type="Texture2D" uid="uid://doernrhm0wwcb" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame23.png" id="25_blvvw"]
+[ext_resource type="Texture2D" uid="uid://cecvlrjm5yjkd" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame24.png" id="26_1qlma"]
+[ext_resource type="Texture2D" uid="uid://d2a8lvs4tbtfw" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame25.png" id="27_ylxyf"]
+[ext_resource type="Texture2D" uid="uid://c21268tuef6hy" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame26.png" id="28_y7260"]
+[ext_resource type="Texture2D" uid="uid://uq131ofbhvxc" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame27.png" id="29_5amb8"]
+[ext_resource type="Texture2D" uid="uid://c7j5qmub1xnfm" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame28.png" id="30_dfw4c"]
+[ext_resource type="Texture2D" uid="uid://h6rlemirh5qx" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame29.png" id="31_7l2ca"]
+[ext_resource type="Texture2D" uid="uid://i084mv2bj2ol" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame30.png" id="32_lbcv7"]
+[ext_resource type="Texture2D" uid="uid://cdsnv4hwgkqm5" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame31.png" id="33_heen4"]
+[ext_resource type="Texture2D" uid="uid://clejeyofslebl" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame32.png" id="34_y7d6e"]
+[ext_resource type="Texture2D" uid="uid://dn44rcus1y4op" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame33.png" id="35_ywe00"]
+[ext_resource type="Texture2D" uid="uid://1aoak81fsp6a" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame34.png" id="36_lpg1a"]
+[ext_resource type="Texture2D" uid="uid://by1iwuae0kxo4" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame35.png" id="37_5n5ky"]
+[ext_resource type="Texture2D" uid="uid://cflr6bcwpkw8f" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame36.png" id="38_2dxm4"]
+[ext_resource type="Texture2D" uid="uid://m0kfck4tj0v0" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame37.png" id="39_7d4kr"]
+[ext_resource type="Texture2D" uid="uid://byrgdiwto0pgs" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame38.png" id="40_s10l5"]
+[ext_resource type="Texture2D" uid="uid://bnqb7yx0wdy42" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame39.png" id="41_skkyc"]
+[ext_resource type="Texture2D" uid="uid://cnkcwnyl2oh7l" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame40.png" id="42_t68d1"]
+[ext_resource type="Texture2D" uid="uid://br77cgipid5j3" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame41.png" id="43_ru6oo"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_c36b8"]
 animations = [{
@@ -11,6 +52,137 @@ animations = [{
 }],
 "loop": 1,
 "name": &"Pour",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xg5n7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_4y4a0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_com3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2bacy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2ytwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_x5fo0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jhtmk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vr2h8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_6ilfd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qi4v0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_4eerf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_y0tw0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_0qhb8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_47rec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_l00ns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_4fk6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_cwady")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_rora7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_77q8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_i2bum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6a1f6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_6qy2s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_7brb7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_blvvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_1qlma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_ylxyf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_y7260")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_5amb8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_dfw4c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_7l2ca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_lbcv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_heen4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_y7d6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ywe00")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_lpg1a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_5n5ky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_2dxm4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_7d4kr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_s10l5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_skkyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_t68d1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_ru6oo")
+}],
+"loop": 1,
+"name": &"default",
 "speed": 5.0
 }]
 
@@ -24,7 +196,26 @@ position = Vector2(165, -156)
 sprite_frames = SubResource("SpriteFrames_c36b8")
 animation = &"Pour"
 
-[node name="Tank" type="Sprite2D" parent="." unique_id=1478927350]
-position = Vector2(-3.8146973e-06, 3.8146973e-06)
-scale = Vector2(0.6640625, 0.734375)
-texture = ExtResource("2_tmp4b")
+[node name="Button" type="Button" parent="." unique_id=955939829]
+offset_left = -106.0
+offset_top = 178.0
+offset_right = 110.0
+offset_bottom = 278.0
+theme_override_font_sizes/font_size = 60
+text = "Pour"
+
+[node name="Label" type="Label" parent="." unique_id=439456426]
+offset_left = -40.0
+offset_top = -240.0
+offset_right = 38.0
+offset_bottom = -143.0
+
+[node name="FuelTank" type="AnimatedSprite2D" parent="." unique_id=440273711]
+position = Vector2(2.3841858e-07, -46)
+scale = Vector2(7, 7)
+sprite_frames = SubResource("SpriteFrames_xg5n7")
+frame = 8
+frame_progress = 0.5709578
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

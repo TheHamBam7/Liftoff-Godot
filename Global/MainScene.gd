@@ -65,9 +65,3 @@ func _process(_delta: float) -> void:
 		$CanvasModulate.visible = true
 	else:
 		pass
-	
-	
-
-
-func _on_fuel_pressed() -> void:
-	pass # Replace with function body.
