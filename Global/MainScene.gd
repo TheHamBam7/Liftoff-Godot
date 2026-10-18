@@ -8,6 +8,7 @@ func _ready() -> void:
 	$SpeedDone.visible = false
 	$Explosion.visible = false
 	$Failure.visible = false
+	$FuelDone.visible = false
 	$Failure/Failure.visible = false
 	$CanvasModulate.visible = false
 func _process(_delta: float) -> void:
@@ -25,6 +26,12 @@ func _process(_delta: float) -> void:
 		$SpeedDone.visible = true
 	else:
 		pass
+	
+	if Global.fuel == 1:
+		$FuelDone.visible = true
+	else:
+		pass
+	
 	
 	if Global.TM == 0 and exploded == false:
 		$Hatch.visible = false

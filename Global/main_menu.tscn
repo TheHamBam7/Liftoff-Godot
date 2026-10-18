@@ -21,7 +21,7 @@ content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
-bg_color = Color(0.30766103, 0.6557396, 0.30837315, 0.6)
+bg_color = Color(0.2015267, 0.20152655, 0.20152652, 0.6)
 corner_radius_top_left = 3
 corner_radius_top_right = 3
 corner_radius_bottom_right = 3
@@ -126,11 +126,22 @@ corner_detail = 5
 
 [node name="Main menu" type="Node2D" unique_id=1373400424]
 
+[node name="GameName" type="Label" parent="." unique_id=1744831086]
+offset_left = 214.0
+offset_top = 9.0
+offset_right = 962.0
+offset_bottom = 184.0
+theme_override_colors/font_color = Color(1, 0.53682053, 0.623993, 1)
+theme_override_fonts/font = ExtResource("2_0g6oi")
+theme_override_font_sizes/font_size = 128
+text = "Liftoff!"
+
 [node name="Start" type="Button" parent="." unique_id=1065668044]
-offset_left = 310.0
-offset_top = 346.0
-offset_right = 818.0
-offset_bottom = 478.0
+custom_maximum_size = Vector2(350, -1)
+offset_left = 400.0
+offset_top = 234.0
+offset_right = 715.0
+offset_bottom = 366.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 90
 theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_sj31c")
@@ -146,21 +157,33 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_53o1n")
 text = "Ready?"
 script = ExtResource("2_lhx2d")
 
-[node name="GameName" type="Label" parent="." unique_id=1744831086]
-offset_left = 214.0
-offset_top = 9.0
-offset_right = 962.0
-offset_bottom = 184.0
-theme_override_colors/font_color = Color(1, 0.53682053, 0.623993, 1)
-theme_override_fonts/font = ExtResource("2_0g6oi")
-theme_override_font_sizes/font_size = 128
-text = "Liftoff!"
+[node name="Tutorial" type="Button" parent="." unique_id=1592489811]
+custom_maximum_size = Vector2(250, -1)
+offset_left = 428.0
+offset_top = 400.0
+offset_right = 678.0
+offset_bottom = 477.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_sj31c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0g6oi")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_0g6oi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0g6oi")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_0g6oi")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_0g6oi")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_0g6oi")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_0g6oi")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_0g6oi")
+theme_override_styles/focus = SubResource("StyleBoxFlat_0g6oi")
+text = "Tutorial"
+script = ExtResource("2_lhx2d")
 
 [node name="Exit" type="Button" parent="." unique_id=415116070]
-offset_left = 441.0
-offset_top = 507.0
-offset_right = 686.0
-offset_bottom = 584.0
+custom_maximum_size = Vector2(250, -1)
+offset_left = 428.0
+offset_top = 500.0
+offset_right = 678.0
+offset_bottom = 577.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_sj31c")
@@ -178,4 +201,5 @@ text = "Exit"
 script = ExtResource("3_lhx2d")
 
 [connection signal="pressed" from="Start" to="Start" method="_on_pressed"]
+[connection signal="pressed" from="Tutorial" to="Tutorial" method="_on_pressed"]
 [connection signal="pressed" from="Exit" to="Exit" method="_on_pressed"]

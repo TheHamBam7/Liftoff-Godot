@@ -399,6 +399,12 @@ position = Vector2(-183.00002, 129)
 scale = Vector2(2.5952754, 2.1640625)
 texture = ExtResource("8_ccwrp")
 
+[node name="FuelDone" type="Sprite2D" parent="." unique_id=726241774]
+visible = false
+position = Vector2(186, 146)
+scale = Vector2(3.902613, 3.4051664)
+texture = ExtResource("8_ccwrp")
+
 [node name="Failure" type="Label" parent="." unique_id=1325912147]
 visible = false
 offset_left = -343.99997

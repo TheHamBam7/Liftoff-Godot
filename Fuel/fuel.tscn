@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cb1g2ud50xupc"]
 
 [ext_resource type="Script" uid="uid://cgcrudg6xih4q" path="res://Fuel/FuelLogic.gd" id="1_x704q"]
-[ext_resource type="Texture2D" uid="uid://b5rbsxr1tfai5" path="res://icon.svg" id="2_tmp4b"]
+[ext_resource type="Texture2D" uid="uid://dbkok1s1wk0sw" path="res://Libresprite/SlidersBackground.png" id="2_com3t"]
 [ext_resource type="Texture2D" uid="uid://dvf3l143aat14" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame1.png" id="3_4y4a0"]
 [ext_resource type="Texture2D" uid="uid://wkwvvvi8wf68" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame2.png" id="4_com3t"]
 [ext_resource type="Texture2D" uid="uid://copw0v7wr0b8y" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame3.png" id="5_2bacy"]
@@ -43,17 +43,8 @@
 [ext_resource type="Texture2D" uid="uid://bnqb7yx0wdy42" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame39.png" id="41_skkyc"]
 [ext_resource type="Texture2D" uid="uid://cnkcwnyl2oh7l" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame40.png" id="42_t68d1"]
 [ext_resource type="Texture2D" uid="uid://br77cgipid5j3" path="res://Fuel/Fuel Tank Anim/FuelTankAnimFrame41.png" id="43_ru6oo"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_c36b8"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_tmp4b")
-}],
-"loop": 1,
-"name": &"Pour",
-"speed": 5.0
-}]
+[ext_resource type="Texture2D" uid="uid://chwx2aalbv5wo" path="res://Fuel/PourFuel1.png" id="44_2bacy"]
+[ext_resource type="Texture2D" uid="uid://bjvgtervlfjsf" path="res://Fuel/PourFuel2.png" id="45_2ytwl"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xg5n7"]
 animations = [{
@@ -189,12 +180,12 @@ animations = [{
 [node name="Node2D" type="Node2D" unique_id=371163737]
 script = ExtResource("1_x704q")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=19182717]
+[node name="SlidersBackground" type="Sprite2D" parent="." unique_id=138180302]
+position = Vector2(-0.5, -0.5)
+scale = Vector2(4.5039063, 5.0703125)
+texture = ExtResource("2_com3t")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1820696056]
-position = Vector2(165, -156)
-sprite_frames = SubResource("SpriteFrames_c36b8")
-animation = &"Pour"
+[node name="Camera2D" type="Camera2D" parent="." unique_id=19182717]
 
 [node name="Button" type="Button" parent="." unique_id=955939829]
 offset_left = -106.0
@@ -216,6 +207,31 @@ scale = Vector2(7, 7)
 sprite_frames = SubResource("SpriteFrames_xg5n7")
 frame = 8
 frame_progress = 0.5709578
+
+[node name="FuelLabel" type="Label" parent="." unique_id=889045646]
+offset_left = -225.0
+offset_top = -100.0
+offset_right = 267.0
+offset_bottom = 75.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 128
+text = "Perfect"
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=464819536]
+visible = false
+color = Color(0.8700143, 1, 0.8527792, 1)
+
+[node name="Can" type="Sprite2D" parent="." unique_id=2118894448]
+visible = false
+position = Vector2(-195.00005, -234)
+scale = Vector2(5, 5)
+texture = ExtResource("44_2bacy")
+
+[node name="Pour" type="Sprite2D" parent="." unique_id=248741137]
+visible = false
+position = Vector2(-35, -230)
+scale = Vector2(4, 4)
+texture = ExtResource("45_2ytwl")
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

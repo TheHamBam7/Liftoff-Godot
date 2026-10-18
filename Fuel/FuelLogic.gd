@@ -18,8 +18,10 @@ var win = false
 
 
 func _ready() -> void:
-	pass
-
+	$FuelLabel.text = ""
+	$CanvasModulate.visible = false
+	$Can.visible = true
+	$Pour.visible = false
 
 func _process(delta: float) -> void:
 	$FuelTank.frame = fuel
@@ -34,6 +36,7 @@ func _process(delta: float) -> void:
 	if fuel >= 40:
 		fuel = 0
 	
+		
 	
 	
 	if Global.TM == 0:
@@ -42,18 +45,32 @@ func _process(delta: float) -> void:
 
 func _on_button_button_down() -> void:
 	if started == false and fail == false and win == false:
+		$Pour.visible = true
+		$Can.visible = false
 		started = true
-		
-
-		
 
 
 func _on_button_button_up() -> void:
+	$Pour.visible = false
+	$Can.visible = true
 	if started == true and fuel <= 35:
+		$FuelLabel.text = "Failure"
+		$FuelLabel.set("theme_override_colors/font_color", Color(0.668, 0.034, 0.16, 1.0))
+		$CanvasModulate.color = Color(0.999, 0.287, 0.343, 1.0)
+		$CanvasModulate.visible = true
 		started = false
-		fuel = 0
 		fail = true
-	if started == true and fuel >= 35:
+		await get_tree().create_timer(0.1).timeout
+		fuel = 0
+		await get_tree().create_timer(1).timeout
+		fail = false
+		$FuelLabel.text = ""
+		$CanvasModulate.visible = false
+	elif started == true and fuel >= 35:
+		$FuelLabel.text = "Perfect"
+		$FuelLabel.set("theme_override_colors/font_color", Color(0.215, 0.415, 0.072, 1.0))
+		$CanvasModulate.color = Color(0.792, 0.933, 0.659, 1.0)
+		$CanvasModulate.visible = true
 		fail = false
 		win = true
 		started = false
