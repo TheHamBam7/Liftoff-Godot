@@ -34,6 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://cpvv3mg86kroa" path="res://Libresprite/RocketExplosion/Kaboom23.png" id="25_p02a6"]
 [ext_resource type="Script" uid="uid://bw15rq1bm52ai" path="res://Fuel/fuel.gd" id="32_2e5oy"]
 [ext_resource type="FontFile" uid="uid://dgjsg7ur8iyqa" path="res://kenney_ui-pack-space-expansion/Font/Kenney Future Narrow.ttf" id="33_burf2"]
+[ext_resource type="Script" uid="uid://c58eycvlju2eg" path="res://Global/liftoff.gd" id="33_eqffe"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_c36b8"]
 animations = [{
@@ -381,6 +382,14 @@ offset_bottom = 226.0
 flat = true
 script = ExtResource("32_2e5oy")
 
+[node name="Liftoff" type="Button" parent="." unique_id=1456345171]
+offset_left = 286.0
+offset_top = 188.0
+offset_right = 559.0
+offset_bottom = 318.0
+flat = true
+script = ExtResource("33_eqffe")
+
 [node name="SlidersDone" type="Sprite2D" parent="." unique_id=1048828279]
 visible = false
 position = Vector2(-7, 155)
@@ -438,3 +447,4 @@ color = Color(1, 0.44368404, 0.37509546, 1)
 [connection signal="pressed" from="Slider" to="Slider" method="_on_pressed"]
 [connection signal="pressed" from="Speed" to="Speed" method="_on_pressed"]
 [connection signal="pressed" from="Fuel" to="Fuel" method="_on_pressed"]
+[connection signal="pressed" from="Liftoff" to="Liftoff" method="_on_pressed"]
