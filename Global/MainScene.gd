@@ -3,6 +3,9 @@ var exploded = false
 var timeout = false
 var flash = false
 func _ready() -> void:
+	clock()
+	$Launch.visible = false
+	$Explosion.visible = false
 	$SlidersDone.visible = false
 	$"HatchDone".visible = false
 	$SpeedDone.visible = false
@@ -34,6 +37,7 @@ func _process(_delta: float) -> void:
 	
 	
 	if Global.TM == 0 and exploded == false:
+		$Explosion.visible = true
 		$Hatch.visible = false
 		$Slider.visible = false
 		$Speed.visible = false
@@ -72,3 +76,30 @@ func _process(_delta: float) -> void:
 		$CanvasModulate.visible = true
 	else:
 		pass
+		
+		
+		
+	
+
+
+func _on_liftoff_pressed() -> void:
+	if Global.P == 4:
+		Global.speed_clock_stop()
+		Global.TMS = true
+		$Launch.visible = true
+		$Launch.play("default")
+		$Explosion.visible = false
+		$SlidersDone.visible = false
+		$"HatchDone".visible = false
+		$SpeedDone.visible = false
+		$Explosion.visible = false
+		$Failure.visible = false
+		$FuelDone.visible = false
+		await get_tree().create_timer(4).timeout
+		get_tree().change_scene_to_file("res://Liftoff.tscn")
+		
+
+func clock():
+	if Global.done == false:
+		Global.speed_clock_start()
+		Global.done = true

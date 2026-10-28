@@ -15,7 +15,6 @@ extends Node2D
 @onready var fuel: Button = $Fuel
 @onready var sliders: Button = $Sliders
 @onready var speed: Button = $Speed
-@onready var radio: Button = $Radio
 @onready var hatch: Button = $Hatch
 
 var T = 0
@@ -29,7 +28,6 @@ func _ready() -> void:
 	fuel.visible = false
 	sliders.visible = false
 	speed.visible = false
-	radio.visible = false
 	hatch.visible = false
 func _process(delta: float) -> void:
 	if T == 0:
@@ -58,7 +56,6 @@ func _process(delta: float) -> void:
 		fuel.visible = true
 		sliders.visible = true
 		speed.visible = true
-		radio.visible = true
 		hatch.visible = true
 func _on_button_pressed() -> void:
 	T += 1
