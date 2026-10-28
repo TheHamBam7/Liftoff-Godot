@@ -57,6 +57,17 @@ func _process(delta: float) -> void:
 		sliders.visible = true
 		speed.visible = true
 		hatch.visible = true
+	elif T == 7:
+		timer.visible = false
+		LT.text = ("Now if you finish all 4 tasks you are ready for launc!")
+		LB.text = ("All you have to do is press te big red buton")
+		fuel.visible = false
+		sliders.visible = false
+		speed.visible = false
+		hatch.visible = false
+	elif T == 8:
+		LT.text = ("Thats it for now! Good luck")
+		LB.text = ("Press the done button when your ready!")
 func _on_button_pressed() -> void:
 	T += 1
 func _on_speed_pressed() -> void:

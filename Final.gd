@@ -14,4 +14,5 @@ func _ready() -> void:
 	.from(0.0)
 
 func _on_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://Global/main_menu.tscn")
+	Global.RestartRequired = true
+	Global.reset()

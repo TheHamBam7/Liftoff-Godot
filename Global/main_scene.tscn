@@ -75,6 +75,7 @@
 [ext_resource type="Texture2D" uid="uid://c31kbnnyq51su" path="res://Libresprite/Takeoff/RocketTakeoff39.png" id="64_qnc46"]
 [ext_resource type="Texture2D" uid="uid://dyvo0xnob78ng" path="res://Libresprite/Takeoff/RocketTakeoff40.png" id="65_qmghd"]
 [ext_resource type="Texture2D" uid="uid://dgmwuxk3hgjua" path="res://Libresprite/Takeoff/RocketTakeoff41.png" id="66_ovbjd"]
+[ext_resource type="Script" uid="uid://di56smrbgl1dg" path="res://Global/Restart.gd" id="76_5d61g"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_c36b8"]
 animations = [{
@@ -486,6 +487,9 @@ texture = ExtResource("3_ccwrp")
 [sub_resource type="TileSet" id="TileSet_xg5n7"]
 sources/0 = SubResource("TileSetAtlasSource_l7p0r")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l7p0r"]
+bg_color = Color(1, 0.34013098, 0.3353195, 1)
+
 [node name="Main Scene" type="Node2D" unique_id=436811397]
 script = ExtResource("1_ccwrp")
 
@@ -532,7 +536,7 @@ offset_right = -371.0
 offset_bottom = 343.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 128
-text = "60"
+text = "30"
 script = ExtResource("5_un5vx")
 
 [node name="Slider" type="Button" parent="." unique_id=686628138]
@@ -618,9 +622,30 @@ visible = false
 position = Vector2(-201, -52)
 color = Color(1, 0.44368404, 0.37509546, 1)
 
+[node name="DoneButton" type="Button" parent="." unique_id=1555598952]
+offset_left = -88.0
+offset_top = 243.0
+offset_right = 89.0
+offset_bottom = 319.0
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_l7p0r")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_l7p0r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l7p0r")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_l7p0r")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l7p0r")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_l7p0r")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_l7p0r")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_l7p0r")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_l7p0r")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_l7p0r")
+theme_override_styles/focus = SubResource("StyleBoxFlat_l7p0r")
+text = "Try again"
+script = ExtResource("76_5d61g")
+
 [connection signal="pressed" from="Hatch" to="Hatch" method="_on_pressed"]
 [connection signal="pressed" from="Slider" to="Hatch" method="_on_button_pressed"]
 [connection signal="pressed" from="Slider" to="Slider" method="_on_pressed"]
 [connection signal="pressed" from="Speed" to="Speed" method="_on_pressed"]
 [connection signal="pressed" from="Fuel" to="Fuel" method="_on_pressed"]
 [connection signal="pressed" from="Liftoff" to="." method="_on_liftoff_pressed"]
+[connection signal="pressed" from="DoneButton" to="DoneButton" method="_on_pressed"]

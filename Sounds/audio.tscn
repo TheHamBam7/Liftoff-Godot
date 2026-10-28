@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://lkuqqgb83tma"]
+
+[ext_resource type="Script" uid="uid://b6fhxnpxdhrhj" path="res://Sounds/audio.gd" id="1_l1t7o"]
+[ext_resource type="AudioStream" uid="uid://by8sj5xvb8xy1" path="res://Sounds/506054__mellau__button-click-1.wav" id="2_643m0"]
+[ext_resource type="AudioStream" uid="uid://cgrow6g2w7irl" path="res://Sounds/361491__fartbiscuit1700__electronic-siren.wav" id="3_643m0"]
+[ext_resource type="AudioStream" uid="uid://pri74w7noyiv" path="res://Sounds/soundreality-explosion-fx-343683.mp3" id="4_lbrkb"]
+[ext_resource type="AudioStream" uid="uid://b8ppce12igmwb" path="res://Sounds/Arthur Vyncke - A Few Jumps Away.mp3" id="5_nydr4"]
+
+[node name="Audio" type="Node2D" unique_id=1876632946]
+script = ExtResource("1_l1t7o")
+
+[node name="Click" type="AudioStreamPlayer2D" parent="." unique_id=509661614]
+stream = ExtResource("2_643m0")
+
+[node name="Siren" type="AudioStreamPlayer2D" parent="." unique_id=731007168]
+stream = ExtResource("3_643m0")
+volume_db = -4.115
+
+[node name="Explode" type="AudioStreamPlayer2D" parent="." unique_id=881289729]
+stream = ExtResource("4_lbrkb")
+
+[node name="Music" type="AudioStreamPlayer2D" parent="." unique_id=841375485]
+stream = ExtResource("5_nydr4")
+autoplay = true
+
+[connection signal="finished" from="Music" to="." method="_on_music_finished"]

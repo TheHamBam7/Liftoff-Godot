@@ -4,6 +4,7 @@ var timeout = false
 var flash = false
 func _ready() -> void:
 	clock()
+	$DoneButton.visible = false
 	$Launch.visible = false
 	$Explosion.visible = false
 	$SlidersDone.visible = false
@@ -15,6 +16,9 @@ func _ready() -> void:
 	$Failure/Failure.visible = false
 	$CanvasModulate.visible = false
 func _process(_delta: float) -> void:
+	if Global.RestartRequired == true:
+		get_tree().reload_current_scene()
+		Global.RestartRequired = false
 	if Global.slider == 1:
 		$SlidersDone.visible = true
 	else:
@@ -37,6 +41,7 @@ func _process(_delta: float) -> void:
 	
 	
 	if Global.TM == 0 and exploded == false:
+		Audio.Siren()
 		$Explosion.visible = true
 		$Hatch.visible = false
 		$Slider.visible = false
@@ -44,10 +49,14 @@ func _process(_delta: float) -> void:
 		$Fuel.visible = false
 		exploded = true
 		await get_tree().create_timer(3).timeout
+		Audio.Siren_stop()
+		Audio.explosion()
 		timeout = true
 		$Failure.visible = false
 		$Explosion.visible = true
 		$Explosion.play("Explosion")
+		await get_tree().create_timer(1).timeout
+		$DoneButton.visible = true
 	else:
 		pass
 	
@@ -103,3 +112,7 @@ func clock():
 	if Global.done == false:
 		Global.speed_clock_start()
 		Global.done = true
+
+
+func _on_done_button_pressed() -> void:
+	pass # Replace with function body.

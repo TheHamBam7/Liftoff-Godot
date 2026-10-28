@@ -23,6 +23,7 @@ boot_splash/minimum_display_time=1000
 
 Global="*uid://c3fnvu8uujpuk"
 TimerGlobal="*uid://caxyhd4orfp5p"
+Audio="*uid://lkuqqgb83tma"
 
 [display]
 

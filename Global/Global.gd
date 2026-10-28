@@ -22,6 +22,10 @@ var TotalTime = 0
 
 var done = false
 
+var restart = false
+
+var RestartRequired = false
+
 func _on_timer_timeout() -> void:
 	if TMS == false:
 		TM -= 1
@@ -32,7 +36,11 @@ func _on_timer_timeout() -> void:
 func _process(_delta: float) -> void:
 	if TM == 0:
 		TimerGlobal.stop()
-		
+	
+	if TM >= 0 and restart == true:
+		print("restart timer")
+		TimerGlobal.start()
+		restart = false
 func speed_clock_start():
 		StartTime = Time.get_ticks_msec()
 	
@@ -46,3 +54,20 @@ func speed_clock_stop():
 func load_finish():
 	await get_tree().create_timer(1).timeout
 	get_tree().current_scene.get_node("Control/TimeNmbr").text = str(TotalTime)
+	
+	
+	
+func reset():
+	restart = true
+	hatch = 0
+	slider = 0
+	speed = 0
+	fuel = 0
+	P = 0
+	TM = 30
+	TMS = false
+	StartTime = 0
+	EndTime = 0
+	TotalTime = 0
+	done = false
+	get_tree().change_scene_to_file("res://Global/main_menu.tscn")
