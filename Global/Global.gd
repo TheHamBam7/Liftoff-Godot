@@ -37,7 +37,7 @@ func _process(_delta: float) -> void:
 	if TM == 0:
 		TimerGlobal.stop()
 	
-	if TM >= 0 and restart == true:
+	if TM >= 0 and restart == true and RestartRequired == false:
 		print("restart timer")
 		TimerGlobal.start()
 		restart = false

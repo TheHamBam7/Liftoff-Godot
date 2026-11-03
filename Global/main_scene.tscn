@@ -623,6 +623,7 @@ position = Vector2(-201, -52)
 color = Color(1, 0.44368404, 0.37509546, 1)
 
 [node name="DoneButton" type="Button" parent="." unique_id=1555598952]
+visible = false
 offset_left = -88.0
 offset_top = 243.0
 offset_right = 89.0
