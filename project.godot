@@ -16,7 +16,6 @@ config/features=PackedStringArray("4.7", "GL Compatibility")
 boot_splash/stretch_mode=3
 boot_splash/use_filter=false
 boot_splash/image="uid://bxq72ykqr2ald"
-config/icon="res://icon.svg"
 boot_splash/minimum_display_time=1000
 
 [autoload]
